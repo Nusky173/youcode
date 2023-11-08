@@ -7,7 +7,7 @@ import GithubProvider from 'next-auth/providers/github';
 export const authOptions: AuthOptions = {
   adapter: PrismaAdapter(prisma),
   theme: {
-    logo: 'img/logo-text.png',
+    logo: '/img/logo-text.png',
   },
   providers: [
     GithubProvider({

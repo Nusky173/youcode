@@ -4,7 +4,8 @@ import { ThemeToggle } from '@/components/theme/ThemeToggle';
 import { Typography } from '@/components/ui/typography';
 import Image from 'next/image';
 import { Button } from '../ui/button';
-import LoggedInButton from '@/features/auth/LoggedInButton';
+import LoggedInButton from '@/features/auth/LoginButton';
+import AuthButton from '@/features/auth/AuthButton';
 
 export function Header() {
   return (
@@ -19,7 +20,7 @@ export function Header() {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
-            <LoggedInButton></LoggedInButton>
+            <AuthButton></AuthButton>
             <ThemeToggle />
           </nav>
         </div>
